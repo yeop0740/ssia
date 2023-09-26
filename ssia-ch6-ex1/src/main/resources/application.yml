@@ -1,0 +1,20 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+#        dialect: MySQL8InnoDBDialect
+#        use_sql_comments: true
