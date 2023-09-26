@@ -42,9 +42,9 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.httpBasic();
 
-        http.authorizeHttpRequests()
+        http.authorizeRequests()
                 .anyRequest()
-                .hasAnyAuthority("WRITE", "READ");
+                .access("hasAuthority('WRITE')");
     }
 
 }
