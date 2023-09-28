@@ -43,8 +43,7 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
         http.httpBasic();
 
         http.authorizeRequests()
-                .mvcMatchers("/hello")
-                .authenticated();
+                .antMatchers("/hello").authenticated();
     }
 
 }
