@@ -18,3 +18,6 @@ spring:
         format_sql: true
 #        dialect: MySQL8InnoDBDialect
 #        use_sql_comments: true
+
+authorization:
+  key: SD9cICjl1e
